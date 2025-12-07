@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement">
+  <meta name="keywords" content="Photo3D, 3D Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AlignCVC: Aligning Cross-View Consistency for Single-Image-to-3D Generation</h1>
+          <div class="is-size-5 publication-authors">
+            Xinyue Liang, Zhiyuan Ma, Lingchen Sun, Yanjun Guo, Lei Zhang<sup>*</sup><br>
+            Department of Computing, The Hong Kong Polytechnic University, Hong Kong, China
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <sup>*</sup> Corresponding Author
+          </div>
+
+          <h1 style="font-size:24px;font-weight:bold">AAAI 2026</h1>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+            
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2506.23150"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            
+             
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Liangsanzhu/Photo3D"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              
+              <!-- Email Link. -->
+              <span class="link-block">
+                <a href="mailto:xinyue.liang@connect.polyu.hk"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Contact</span>
+                  </a>
+              </span>
+             
+            </div>
+
+            <!-- Demo video under the title -->
+            <div style="margin-top: 20px;">
+              <video controls autoplay loop muted playsinline
+                     style="max-width: 100%; border-radius: 10px;">
+                <source src="./static/images/photo3D_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.svg" alt="Photo3D Teaser" width="85%" style="border-radius: 10px; display: block; margin: 0 auto;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Photo3D</span> generates photorealistic 3D objects, featuring rich realistic details and stable 3D structure.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method Overview</h2>
+          <img src="static/images/method.svg" alt="Photo3D Method" width="85%" style="border-radius: 10px; display: block; margin: 0 auto;">
+          <p class="content has-text-justified" style="margin-top: 20px;">
+            Overview of Photo3D. We first construct Photo3D‑MV, a realistic, detail‑enhanced multi‑view dataset paired with 3D geometry, and propose associated schemes to learn realistic 3D appearance details.
+Paradigm‑specific training strategies are designed for geometry–texture coupled and decoupled paradigms: (a) diffusion‑based 3D‑native generator (\eg, Trellis); (b) single feed‑forward 3D‑native texturing model (\eg, TexGaussian); and (c) diffusion‑based multi‑view texturing model (\eg, Step1X-3D).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+         We propose \textbf{Photo3D}, a framework that aims for photorealistic 3D generation by improving realistic appearance details while preserving structural consistency. Dedicated strategies are presented for different 3D‑native paradigms to facilitate training.
+          </p>
+          <p>
+          We develop a 3D‑aligned multi‑view synthesis pipeline and construct a realism‑enhanced dataset, namely Photo3D‑MV, to support the training of photorealistic 3D-native generation models.          </p>
+          <p>
+            Extensive experiments demonstrate that Photo3D achieves state‑of‑the‑art photorealistic 3D generation across diverse 3D‑native paradigms and benchmarks.          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<!-- <div align="center" style="margin-top:80px;" style="margin-bottom:120px;">
+<img style='height: auto; width: 75%; object-fit: contain' src="static/images/overview.png" alt="overview_image">
+</div>  -->
+
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <!-- TexGaussian qualitative comparison -->
+        <div style="margin-bottom: 30px;">
+          <h3 class="title is-4">Qualitative comparison with TexGaussian</h3>
+          <img src="static/images/TexGaussian.svg"
+               alt="TexGaussian Results"
+               style="max-width: 85%; border-radius: 10px; display: block; margin: 0 auto;">
+        </div>
+
+        <!-- Step1X-3D qualitative comparison -->
+        <div style="margin-bottom: 30px;">
+          <h3 class="title is-4">Qualitative comparison with Step1X-3D</h3>
+          <img src="static/images/step1x_new.svg"
+               alt="Step1X-3D Results"
+               style="max-width: 85%; border-radius: 10px; display: block; margin: 0 auto;">
+        </div>
+
+        <!-- Trellis qualitative comparison -->
+        <div style="margin-bottom: 30px;">
+          <h3 class="title is-4">Qualitative comparison with Trellis</h3>
+          <img src="static/images/trellis_new.svg"
+               alt="Trellis Results"
+               style="max-width: 85%; border-radius: 10px; display: block; margin: 0 auto;">
+        </div>
+
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@misc{photo3D,
+  title={Photo3D: Advancing Photorealistic 3D Generation through Structure‑Aligned Detail Enhancement}, 
+  author={Xinyue Liang and Zhiyuan Ma and Lingchen Sun and Yanjun Guo and Lei Zhang},
+  year={2025},
+  eprint={xxx},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={xxx}, 
+}</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://3d-moments.github.io/">3d-moments</a>.
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
