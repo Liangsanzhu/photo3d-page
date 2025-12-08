@@ -86,10 +86,25 @@
         </a>
       </div>
 
-      <!-- Video -->
-      <video controls autoplay loop muted playsinline style="margin-top:25px;">
-        <source src="./static/video/demo.mp4" type="video/mp4">
-      </video>
+    <!-- Video -->
+<video controls autoplay loop muted playsinline style="margin-top:25px;">
+  <source src="./static/video/demo.mp4" type="video/mp4">
+</video>
+
+<script>
+  const note = document.createElement("p");
+  note.style.marginTop = "8px";
+  note.style.fontSize = "14px";
+  note.style.color = "#555";
+
+  const link = document.createElement("a");
+  link.href = "https://www.youtube.com/watch?v=lvOJoPdczvA";
+  link.textContent = "Watch the HD version on YouTube";
+  link.target = "_blank";
+
+  note.appendChild(link);
+  document.currentScript.insertAdjacentElement("beforebegin", note);
+</script>
 
     </div>
   </div>
